@@ -105,3 +105,5 @@ typings/
 bundle.js
 dist/*
 !dist/*.html
+!dist/extras
+!dist/extras/*
