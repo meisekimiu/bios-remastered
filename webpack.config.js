@@ -5,6 +5,7 @@ module.exports = {
     entry: {
         index: './src/main.ts',
         bio1: './src/bio1.ts',
+        bio2: './src/bio2.ts',
     },
     optimization: {
         minimizer: [new UglifyJsPlugin({
@@ -49,7 +50,7 @@ module.exports = {
         compress: true,
         port: 3001
     },
-    mode: 'production',
+    mode: 'development',
     output: {
         filename: '[name].js',
         path: path.resolve(__dirname, 'dist')
