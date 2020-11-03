@@ -27,11 +27,21 @@ header h1 {font-size: 4em; margin-top: 0em; margin-left: 50px; margin-bottom: 0;
     padding: 5px;
     flex-grow: 1;
 }
+.mdate {
+    color: #666;
+}
+
+@media screen and (max-width: 500px) {
+    .table {
+        flex-direction: column-reverse;
+    }
+    .entry {
+        height: 45vh;
+    }
+    .entries-list {
+        height: 40vh;
+    }
+}
 
 
-#field {width: 55%;}
-#entries-td {width: 33%;}
-#entries {overflow-y: auto; height: 500px;}
-#active-td {width: 66%;}
-#active {font-family: "Courier New", monospace; width: 80%; height: 500px; border: 1px solid black; overflow: auto; white-space: pre; padding: 5px;}
 li {list-style-type: none; position: relative; left: -25px; margin-bottom: 2px;}
