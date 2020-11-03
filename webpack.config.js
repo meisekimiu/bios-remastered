@@ -2,7 +2,10 @@ const path = require('path');
 const UglifyJsPlugin = require('terser-webpack-plugin');
 
 module.exports = {
-    entry: './src/main.ts',
+    entry: {
+        index: './src/main.ts',
+        bio1: './src/bio1.ts',
+    },
     optimization: {
         minimizer: [new UglifyJsPlugin({
             terserOptions: {
@@ -46,9 +49,9 @@ module.exports = {
         compress: true,
         port: 3001
     },
-    mode: 'development',
+    mode: 'production',
     output: {
-        filename: 'bundle.js',
+        filename: '[name].js',
         path: path.resolve(__dirname, 'dist')
     }
 };

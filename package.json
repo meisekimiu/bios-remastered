@@ -7,7 +7,7 @@
   "scripts": {
     "build": "webpack",
     "start": "webpack-dev-server --open",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha -r ts-node/register --require test/setup.ts $(find test -name '*_test.ts')"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,8 @@
     "chai": "^4.2.0",
     "css-loader": "^5.0.0",
     "file-loader": "^6.2.0",
+    "jsdom": "^16.4.0",
+    "jsdom-global": "^3.0.2",
     "mocha": "^8.2.0",
     "style-loader": "^2.0.0",
     "terser-webpack-plugin": "^5.0.3",
