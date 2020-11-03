@@ -1,4 +1,4 @@
-import * as Bio1 from "../data/bio1.json";
+import Bio1 from "../data/bio1.json";
 import "./bio1/bio1.css";
 import Bio1EntryList, {BioEntry} from "./bio1/entrylist";
 import OpenBioEntry from "./bio1/openbioentry";
