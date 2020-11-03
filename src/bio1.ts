@@ -4,7 +4,17 @@ import Bio1EntryList, {BioEntry} from "./bio1/entrylist";
 import OpenBioEntry from "./bio1/openbioentry";
 
 const openEntry = (entry: BioEntry) => {
+    function deleteElement(element: Element) {
+        if (!element) {
+            return;
+        }
+        element.parentNode.removeChild(element);
+    }
     OpenBioEntry(entry);
+    if (entry.title === "the final.txt") {
+        deleteElement(document.querySelector(".entries-list"));
+        deleteElement( document.querySelector("header p"));
+    }
 };
 
 document.addEventListener("DOMContentLoaded", () => {
