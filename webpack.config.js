@@ -6,6 +6,7 @@ module.exports = {
         index: './src/main.ts',
         bio1: './src/bio1.ts',
         bio2: './src/bio2.ts',
+        bio3: './src/bio3.ts',
     },
     optimization: {
         minimizer: [new UglifyJsPlugin({
