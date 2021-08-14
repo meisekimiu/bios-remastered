@@ -1,4 +1,4 @@
-import Bio2 from "../data/bio2.json";
+import Bio2 from "../data/bio2_refined.json";
 import Bio1EntryList, {BioEntry} from "./bio1/entrylist";
 import OpenBioEntry from "./bio1/openbioentry";
 import "./bio2/bio2.css";
